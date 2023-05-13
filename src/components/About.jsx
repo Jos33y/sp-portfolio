@@ -27,7 +27,7 @@ const ServiceCard = ({ index, title, icon}) => {
       </motion.div>
 
     </Tilt>
-  )
+  ) 
 }
 
 const About = () => {

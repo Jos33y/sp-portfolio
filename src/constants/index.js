@@ -112,7 +112,7 @@ import {
       name: "docker",
       icon: docker,
     },
-  ];
+  ]; 
   
   const experiences = [
     {
