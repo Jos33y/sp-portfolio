@@ -16,7 +16,6 @@ import Swal from 'sweetalert2';
 //user_KqXinkkQ79mUegkWWQCdH
 
 const Contact = () => {
-  const Swal = require('sweetalert2')
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -42,7 +41,7 @@ const Contact = () => {
         from_name: form.name,
         to_name: 'Pamino.js',
         from_email: form.email,
-        to_email: 'josephlagbalu@gmail.com',
+        to_email: 'Kolawoleolayinka16@gmail.com',
         message: form.message,
       }, 'T_n4Xk159ZUu1YKU2').then(() => {
         setLoading(false);
