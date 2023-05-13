@@ -6,8 +6,17 @@ import { styles } from '../styles';
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motions";
+import Swal from 'sweetalert2';
+
+
+
+
+//template id template_xgjq2tj
+//service_rdcwj0a
+//user_KqXinkkQ79mUegkWWQCdH
 
 const Contact = () => {
+  const Swal = require('sweetalert2')
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -18,11 +27,43 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value })
 
   }
 
   const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
+    emailjs.send('service_1fcze4v', 'template_z0n1svx',
+      {
+        from_name: form.name,
+        to_name: 'Pamino.js',
+        from_email: form.email,
+        to_email: 'josephlagbalu@gmail.com',
+        message: form.message,
+      }, 'T_n4Xk159ZUu1YKU2').then(() => {
+        setLoading(false);
+        Swal.fire(
+          'Thank You!',
+          'I will get back to you soon!',
+          'success'
+        )
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        })
+      }, (error) => {
+        setLoading(false);
+        Swal.fire(
+          'Error!',
+          'something went wrong.',
+          'error'
+        )
+      })
   }
 
 
@@ -87,7 +128,7 @@ const Contact = () => {
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-            <EarthCanvas />
+        <EarthCanvas />
       </motion.div>
 
     </div>
