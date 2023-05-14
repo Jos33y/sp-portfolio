@@ -22,6 +22,6 @@ module.exports = {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
     },
-  },
+  }, 
   plugins: [],
 };
