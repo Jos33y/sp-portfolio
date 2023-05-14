@@ -151,7 +151,7 @@ import {
       company_name: "Storetract",
       icon: storetract,
       iconBg: "#E6DEDD",
-      date: "May 2022 - December 2023",
+      date: "May 2022 - December 2022",
       points: [
         "Developed the frontend of an ecommerce website using HTML, CSS, and JavaScript.",
         "Skilled in using React and Redux to build complex user interfaces and manage state effectively.",
