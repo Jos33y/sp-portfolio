@@ -4,25 +4,28 @@ import {
     creator,
     web,
     javascript,
-    typescript,
+    php,
     html,
     css,
     reactjs,
     redux,
     tailwind,
     nodejs,
-    mongodb,
+    firebase,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    vercel,
+    pamino,
+    grimaldi,
+    storetract,
+    kwasu,
+    repe,
+    audiophile,
+    sneakers,
     threejs,
+    userone,
+    usertwo,
+    userthree,
   } from "../assets";
   
   export const navLinks = [
@@ -73,8 +76,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "PHP",
+      icon: php,
     },
     {
       name: "React JS",
@@ -93,8 +96,8 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "Firebase",
+      icon: firebase,
     },
     {
       name: "Three JS",
@@ -109,62 +112,65 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "vercel",
+      icon: vercel,
     },
   ]; 
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Bsc. Computer Science",
+      company_name: "Kwara State University",
+      icon: kwasu,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Aug 2016 - Oct 2020",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Completed courses in Data Structures and Algorithms, Database Systems, and Computer Networks, which have honed my problem-solving and programming skills.",
+        "Completed a summer internship at a local software development company, where I worked on quality assurance and software testing, gaining hands-on experience with industry-standard testing tools and processes.",
+        "Proficient in programming languages such as Java and PHP, and experienced in using software development tools such as Git and Eclipse IDE.",
+        "Developed a web application for a course project using HTML, CSS, and JavaScript, which showcased my ability to design and implement software solutions.",
       ],
     },
+
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Software Tester",
+      company_name: "Grimaldi",
+      icon: grimaldi,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "July 2021 - April 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Assisted in conducting functional testing on web and mobile applications, and documented test results and defects.",
+        "Collaborated with team members to create test cases and execute them, and actively participated in daily standup meetings to report progress.",
+        "Familiarized with Agile development methodologies and experienced in testing softwares.",
+        "Identified and reported defects in a timely manner and collaborated with the development team to resolve them.",
       ],
     },
+
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Frontend Developer",
+      company_name: "Storetract",
+      icon: storetract,
+      iconBg: "#E6DEDD",
+      date: "May 2022 - December 2023",
+      points: [
+        "Developed the frontend of an ecommerce website using HTML, CSS, and JavaScript.",
+        "Skilled in using React and Redux to build complex user interfaces and manage state effectively.",
+        "Designed and implemented a mobile-first approach for an ecommerce website to improve user experience on smaller screens.",
+        "Collaborated with cross-functional teams, including designers and backend developers, to develop and launch new features on an ecommerce website.",
+      ],
+    },
+  
+    {
+      title: "Frontend Engineer",
+      company_name: "Pamino.js",
+      icon: pamino,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Worked as a freelance frontend developer for various clients and developed responsive websites using Bootstrap and CSS frameworks",
+        "Created a portfolio website using React and deployed it on Netlify",
+        "Proficient in JavaScript, React, Redux, and CSS pre-processors like Sass and Less.",
+        "Participation in relevant online communities or forums, such as Frontend Mentor or GitHub, where you can showcase your skills and collaborate with others in the field.",
       ],
     },
   ];
@@ -172,84 +178,63 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Pamino's web dev skills created my stunning portfolio site, perfectly showcasing my work.", 
+      name: "Bode MTN",
+      designation: "Data Analyst",
+      company: "MTN NG",
+      image: usertwo,
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "Pamino is an exceptional web developer who truly cares about his clients' success.",
+      name: "AZ Teepixel",
+      designation: "CEO",
+      company: "Teepixel's",
+      image: userone,
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "Thank you Pamino for creating a stunning website that perfectly captures our brand.",
+      name: "Sisi Oyin",
+      designation: "CEO",
+      company: "Lingeries by Sisi Oyin",
+      image: userthree,
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Repe",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Use our tools to plan, design, and build your renovation with the industry's top designers and contractors.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "bootstrap",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "PWA",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: repe,
+      source_code_link: "https://repe.vercel.app/",
     },
     {
-      name: "Job IT",
+      name: "Audiophile",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "vercel",
           color: "green-text-gradient",
         },
         {
@@ -257,8 +242,29 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: audiophile,
+      source_code_link: "https://audiphile19.vercel.app/",
+    },
+    {
+      name: "Sneakers",
+      description:
+        "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
+        tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "bootstrap",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: sneakers,
+      source_code_link: "https://sneakers-product-page-one.vercel.app/",
     },
   ];
   

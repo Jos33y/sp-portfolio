@@ -7,26 +7,40 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motions";
 import { Tilt } from "react-tilt";
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+}) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-       options={{
-        max: 45,
-        scale: 1,
-        speed: 450
-       }}
-       className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-       >
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      >
         <div className="relative w-full h-[230px]">
-          <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover rounded-2xl"
+          />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-             >
-              <img 
-                src={github} alt={github} className="w-1/2 h-1/2 object-contain" />
+              className="w-11 h-11 flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={github}
+                alt={github}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -36,17 +50,18 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name} </p>
-            ))}
+          {tags.map((tag) => (
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+              #{tag.name}{" "}
+            </p>
+          ))}
         </div>
       </Tilt>
     </motion.div>
-  )
-}
+  );
+};
 
 const Works = () => {
-
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -59,17 +74,17 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-word examples of my work. Each project is briefly decribed with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Please take a look at the following projects that highlight my
+          problem-solving abilities, technology expertise, and project
+          management skills. Each project includes a brief description and a
+          live demo link. I invite you to explore these examples of my work to
+          gain insight into my approach to project execution.
         </motion.p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-            <ProjectCard key={`project-${index}`} index={index} {...project}  />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>

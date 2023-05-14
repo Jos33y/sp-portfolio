@@ -8,27 +8,31 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
+import vercel from "./tech/vercel.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
+import firebase from "./tech/firebase.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import php from "./tech/php.png";
+import threejs from "./tech/threejs.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import pamino from "./company/pamino.png";
+import kwasu from "./company/kwasu.png";
+import grimaldi from "./company/grimaldi.png";
+import storetract from "./company/storetract.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import repe from "./repe.png";
+import audiophile from "./audiophile.png";
+import sneakers from "./sneakers.png";
+
+import userone from "./users/user-2.png"
+import usertwo from "./users/user-3.png"
+import userthree from "./users/user-4.png"
 
 export {
   logo,
@@ -40,23 +44,26 @@ export {
   menu,
   close,
   css,
-  docker,
+  vercel,
   figma,
   git,
   html,
   javascript,
-  mongodb,
+  firebase,
   nodejs,
   reactjs,
   redux,
   tailwind,
-  typescript,
+  php,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  pamino,
+  kwasu,
+  grimaldi,
+  storetract,
+  repe,
+  audiophile,
+  sneakers,
+  userone,
+  usertwo,
+  userthree,
 };
