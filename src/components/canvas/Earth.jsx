@@ -24,7 +24,7 @@ const EarthCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,
-        rear: 0.1,
+        rear: 0.1, 
         far: 200,
         position: [-4, 3, 6]
       }}
